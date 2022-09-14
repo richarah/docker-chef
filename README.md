@@ -19,5 +19,9 @@ Once the image is built, it may be run as follows. By default, the image include
 docker run -it docker-chef
 ```
 Finally, run the Chef interpreter, e.g.:
-`rchef -s FibonacciDuFromage.chef`
+
+```
+rchef -s FibonacciDuFromage.chef
+```
+
 Bon appetit!
