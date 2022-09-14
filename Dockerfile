@@ -15,7 +15,7 @@ RUN cd rchef && cargo build --release --
 RUN mv /build/rchef/target/release/rchef /usr/local/bin/rchef
 
 # Cleanup
-WORKDIR /home
 RUN rm -rfv /build
-
+ADD recipes /recipes
+WORKDIR /recipes
 CMD /bin/sh
