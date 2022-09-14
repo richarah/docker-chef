@@ -3,7 +3,7 @@
 A containerised runtime environment for the [Chef](https://esolangs.org/wiki/Chef) esolang, using a fork of the [RChef interpreter](https://github.com/booleancoercion/rchef) originally written by GitHub user [booleancoercion](https://github.com/booleancoercion). 
 
 #### A note on RChef
-Due to RChef having more stringent requirements than most Chef interpreters, some programs that run fine on other implementations may exhibit unexpected behaviour. This will be resolved once time and effort allows for it.
+Due to RChef having more stringent requirements for Chef programs than most interpreters, some programs that run fine on other implementations may exhibit unexpected behaviour. This will be resolved once time and effort allows for it.
 
 # Build
 
