@@ -9,14 +9,13 @@ RUN apk add curl git cargo
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 # RChef, a Rust-based Chef interpreter
-# (all credit to GitHub user booleancoercion for this thing of beauty)
-RUN git clone https://github.com/richarah/rchef && \ 
-    cd rchef && cargo build --release -- && \
-    mv /build/rchef/target/release/rchef /usr/local/bin/rchef
-
-WORKDIR /home
+# (all credit to GitHub user booleancoercion for this masterpiece)
+RUN git clone https://github.com/richarah/rchef
+RUN cd rchef && cargo build --release --
+RUN mv /build/rchef/target/release/rchef /usr/local/bin/rchef
 
 # Cleanup
+WORKDIR /home
 RUN rm -rfv /build
 
 CMD /bin/sh
