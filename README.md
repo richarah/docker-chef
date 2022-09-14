@@ -18,7 +18,9 @@ Once the image is built, it may be run as follows. By default, the image include
 ```
 docker run -it docker-chef
 ```
-Finally, run the Chef interpreter, e.g.:
+The Chef interpreter may now be run from within the container.
+
+For instance, to run the Fibonacci example (using the `-s` spaced mode flag for neater formatting):
 
 ```
 rchef -s FibonacciDuFromage.chef
