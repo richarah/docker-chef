@@ -1,6 +1,6 @@
 # docker-chef
 
-A containerised runtime environment for the [Chef](https://esolangs.org/wiki/Chef) esolang, using a fork of the [RChef interpreter](https://github.com/booleancoercion/rchef) by GitHub user [booleancoercion](https://github.com/booleancoercion). 
+A containerised runtime environment for the [Chef](https://esolangs.org/wiki/Chef) esolang, using a fork of the [RChef interpreter](https://github.com/booleancoercion/rchef) originally written by GitHub user [booleancoercion](https://github.com/booleancoercion). 
 
 # Build
 
