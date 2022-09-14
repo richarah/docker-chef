@@ -12,7 +12,7 @@ RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 # (all credit to GitHub user booleancoercion for this thing of beauty)
 RUN git clone https://github.com/richarah/rchef && \ 
     cd rchef && cargo build --release -- && \
-    mv /build/rchef/target/release/rchef /usr/local/rchef
+    mv /build/rchef/target/release/rchef /usr/local/bin/rchef
 
 WORKDIR /home
 
