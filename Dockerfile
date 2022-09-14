@@ -16,6 +16,9 @@ RUN mv /build/rchef/target/release/rchef /usr/local/bin/rchef
 
 # Cleanup
 RUN rm -rfv /build
+
+# Examples
 ADD recipes /recipes
+
 WORKDIR /recipes
 CMD /bin/sh
